@@ -1,0 +1,93 @@
+	html, html a {
+		-webkit-font-smoothing: antialiased;
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+	}
+
+	* {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	body {
+		background: url('../images/background.jpg') center center;
+		font-family: 'Share Tech', sans-serif;
+	}
+
+	h1 {
+		color: #FFF;
+		text-align: center;
+		text-shadow: 2px 2px #000;
+		font-size: 40px;
+	}
+
+	.content #imgcamcapt {
+        position:absolute;
+	}
+
+	.container {
+		width: 640px;
+		margin: auto;
+	}
+
+	.polaroid {
+		margin: auto;
+		margin-top: 50px;
+		width: 640px;
+		height: 480px
+		background-color: #FFF;
+		border: 10px solid #FFF;
+		border-bottom: 10px solid #FFF;
+		-webkit-box-shadow: 3px 3px 3px #000;
+		-moz-box-shadow: 3px 3px 3px #000;
+		box-shadow: 3px 3px 3px #000;
+/*		background: url('https://9a9af73d-a-372da08b-s-sites.googlegroups.com/a/globant.com/qci/news/coding-dojos-tdd/Capital%20Federal-20131010-00125.jpg?attachauth=ANoY7crrQToP_-Ll3dByAti0Q_w5nvTxn_a9IFDtSN53BGDIOO46y8nG9hPKFIhUoY2ikPvx2N2HFq0x-NjdWkabzNiy9erQLWRjVQ44bnULK09GYRo78uRIl1QFnWS0bik25xD8_KCW0LLy4TETk67gwpDLGfjYqXBuhAos89jHo333PJmbNT7jtTD5D2UZscTANCyvQwawnH8pLL6usfZYwG8aXtcXu4CIg59ls7sRQi79HZUbYCgGbtauOKUUxLp0DTQdKd9x&attredirects=0');	*/
+		background-size: cover;
+	}
+
+	.counters {
+		margin-top: 20px;
+	}
+
+	.counters > div {
+		width: 200px;
+		text-align: center;
+		color: #FFF;
+		font-size: 28px;
+		background-color: #FFF;
+		background: #a90329; /* Old browsers */
+		background: -moz-linear-gradient(top,  #a90329 0%, #8f0222 44%, #6d0019 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a90329), color-stop(44%,#8f0222), color-stop(100%,#6d0019)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+		padding: 10px;
+		-webkit-box-shadow: 3px 3px 3px #000;
+		-moz-box-shadow: 3px 3px 3px #000;
+		box-shadow: 3px 3px 3px #000;		
+	}
+
+	.in {
+		margin-left: 40px;
+	}
+
+	.out {
+		float: right;
+		margin-right: 40px;
+	}
+
+	.title {
+		font-size: 22px;
+	}
+
+	.number {
+		font-size: 80px;
+		text-shadow: 2px 2px #000;		
+	}
+
+	.rounded {
+		-moz-border-radius: 7px;
+		border-radius: 7px;
+	}

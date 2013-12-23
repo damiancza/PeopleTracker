@@ -1,0 +1,56 @@
+
+.time-in {
+padding-top: 80px;
+padding-bottom: 200px;
+background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #c1deed));
+background-image: -webkit-linear-gradient(top, #ffffff, #c1deed);
+background-image: -moz-linear-gradient(top, #ffffff, #c1deed);
+background-image: -o-linear-gradient(top, #ffffff, #c1deed);
+background-image: linear-gradient(top, #ffffff, #c1deed);
+border-bottom: solid 1px #e5e5e5;
+}
+
+.line {
+display: block;
+background: white;
+background: white;
+background: rgba(255, 255, 255, 0.5);
+-moz-border-radius: 100px;
+-webkit-border-radius: 100px;
+-o-border-radius: 100px;
+border-radius: 100px;
+border: solid 1px #bee1f2;
+position: absolute;
+top: 30px;
+left: 10%;
+width: 6px;
+height: 200px;
+margin-left: -4px;
+}
+
+.dot {
+display: block;
+-moz-border-radius: 100px;
+-webkit-border-radius: 100px;
+-o-border-radius: 100px;
+border-radius: 100px;
+width: 12px;
+height: 12px;
+background: #c1deed;
+border: solid 1px #88acbf;
+position: absolute;
+z-index: 99;
+}
+
+.timeline li {
+background: white;
+border: solid 1px #bfbfbf;
+-moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+-webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+-o-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+width: 42.5%;
+padding: 2%;
+position: relative;
+margin-bottom: 18px;
+}

@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Camera Dashboard</title>
+    <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+    <link href="/css/font.css" rel="stylesheet">
+    <link href="/css/pure-min.css" rel="stylesheet">
+    <link href="/css/blue.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="pure-g-r" id="layout">
+                <a href="#menu" id="menuLink" class="pure-menu-link">
+          <span></span>
+      </a>
+      <div class="pure-u" id="topmenu">
+            <div class="pure-menu pure-menu-horizontal pure-menu-open pure-topmenu">
+                 <ul>
+                    <li class="pure-menu-selected"><a href="Index.html">Introduccion</a></li>
+                    <li><a href="PeopleCounter.html">People Counter</a></li>
+                    <li><a href="Statistics.html">Estadisticas</a></li>
+                    <li><a href="Tracking.html">Seguimiento</a></li>
+                </ul>
+            </div>
+        </div>
+    <div class="pure-u" id="menu">
+        <div class="pure-menu pure-menu-open">
+            <div id="menuheader">
+                <div class="wraplogo">
+                    <a class="pure-menu-heading" href="/Intro.html"><img id="logo" src="img/Camara.png"></img></a>
+                </div>
+            </div>
+            <ul>
+                <li class=" ">
+                    <a href="#home">Inicio</a>
+                </li>
+                <li class=" ">
+                    <a href="#description">Descripcion</a>
+                </li>
+                <li class=" ">
+                    <a href="#components">Componentes</a>
+                </li>
+                <li class="menu-item-divided">
+                    <div>
+                        <a href="#config">Configuracion</a>
+                    </div>
+                </li>
+            </ul>
+        </div> 
+    </div>
+    <div class="pure-u-1" id="main">
+        <div class="header">
+            <h1>Object Tracking</h1>
+            <h2>Deteccion de objetos en video.</h2>
+        </div>
+        <div class="content">
+            <h2 id="description" class="content-subhead">Descripcion</h2>
+            <p>
+El seguimiento de objetos u object tracking es el metodo para estimar el tiempo, la ubicacion de uno o mas objetos moviles mediante el uso de una camara.   </p>
+            <p>La tecnica utilizada es la de substraccion de fondo, esta tecnica no esta relacionada con la tecnica de substraccion de fondo mediante color, tambien conocida como pantalla verde, muy utilizada en el mundo del entretenimiento. </p><p>
+La manera que se identifican los objetos es mediante un fondo conformado por varios cuadros que representan el patron con el cual cada cuadro se comparara para identificar y seguir el objeto que aparece en la pantalla.
+            </p>
+            <p>Una de las limitaciones que tiene esta tecnica es que es muy sensible a los cambios de luz en el ambiente. Si se usa en espacios abiertos o con luz variable, se debera readaptar el patron del fondo para volver a identificar los objetos.</p>
+            <h2 id="components" class="content-subhead">Componentes</h2>
+            <p>
+                La libreria es una combinacion de varias librerias y desarrollo interno, todas desarrolladas bajo la libreria OpenCv. 
+            </p> 
+            <h4>Extraccion de fondo:</h4>
+            <p>
+                Para la identificacion del fondo se utilizo el algoritmo CodeBlock, que es parte de la libreria base OpenCv. Para esto realiza la acumulacion de los primeros cuadros para conformar el fondo. El resultado de la misma es una imagen en blanco y negro, donde se puede distinguir el objeto en la imagen.
+            </p>
+            <img class="StackBack1" src="img/BackBGS.jpg">
+            <img class="StackBack2" src="img/BackBGS.jpg">
+            <img class="StackBack3" src="img/BackBGS.jpg">
+            <img class="StackBack4" src="img/NegBGS.jpg">
+            <img src="img/NegBGSobj.jpg">
+            <h4>Reconocimiento de color:</h4>
+            <p>
+                Para identificar objetos diferenciandolos por color se utilizo la libreria <a href="https://code.google.com/p/cvblob">cvblob</a>. 
+Con el uso de esta libreria y mediante esta tecnica denominada labeling se identifican los objetos color blanco dentro de la imagen generada por la libreria codeblock.
+            </p>
+            <img src="img/test_screenshot.png" width="320px" height="240px">
+            <h4>Seguimiento de objetos:</h4>
+            <p> Una vez realizado el reconocimiento de objetos, se realiza la identificacion de cada uno. Para esto se utilizo algoritmos para determinar que el objeto sea el mismo de un cuadro al otro mediante el calculo de la diferencia del radio con respecto a la posicion y la variacion de tama&ntilde;o del objeto. Todo esto se parametriza mediante archivos de configuracion de la libreria. En esta etapa se guardan los datos de estadisticas, la cantidad de objetos que se identifican en un cuadro, la duracion que tuvo en pantalla, la velocidad, etc.
+            </p>
+            <img src="img/sampleBlob.jpg" width="320px" height="240px">
+            <h4>Conteo de objetos:</h4>
+            <p> 
+                Finalmente, para determinar los objetos que cruzan frente a la camara se parametriza el trazado de una linea dentro de la pantalla, cada vez que un objeto la cruza en cualquiera de las direcciones se realiza un conteo tomando en cuenta la dirccion del objeto con respcto a la linea.
+            </p>
+            <img src="img/sampleCount.jpg" width="320px" height="240px">
+            <h2 id="config" class="content-subhead">Configuracion</h2>
+            <p>
+                Toda la parametrizacion de la libreria se realiza mediante archivos XML.
+            </p>
+
+        </div>
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/PeopleCounter.js"></script>
+</body>
+</html>

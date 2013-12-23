@@ -1,0 +1,178 @@
+.pure-button-success,
+.pure-button-error,
+.pure-button-warning,
+.pure-button-secondary {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+    .pure-button-success {
+    background: rgb(28, 184, 65);
+    /* this is a green */
+}
+    .pure-button-error {
+    background: rgb(202, 60, 60);
+    /* this is a maroon */
+}
+    .pure-button-warning {
+    background: rgb(223, 117, 20);
+    /* this is an orange */
+}
+    .pure-button-secondary {
+    background: rgb(66, 184, 221);
+    /* this is a light blue */
+}
+    .l-box-numbers {
+    width: 640px;
+    padding-top: 10px;
+}
+    .live {
+    margin-left: auto;
+    -webkit-box-shadow: 3px 3px 3px rgba(0,48,48,0.25);
+    -moz-box-shadow: 3px 3px 3px rgba(0,48,48,0.25);
+}
+    .cardnumber {
+    height: 110px;
+    width: 200px;
+    -webkit-box-shadow: 3px 3px 3px rgba(0,48,48,0.25);
+    -moz-box-shadow: 3px 3px 3px rgba(0,48,48,0.25);
+}
+    .cardnumber .Number {
+    line-height: 0em;
+    color: #FDFCFA;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 300;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+    .numberleft {
+    float: left;
+    background-color: #31C775;
+}
+    .number-right {
+    float: right;
+    background-color: #F9575B;
+}
+    .cardnumber .numtitle {
+    line-height: 0em;
+    text-align: center;
+    color: #FDFCFA;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+    #topmenu {
+    background-color: #ddd;
+    width: 100%;
+    height: 34px;
+}
+    #topmenu a {
+    color: #FFF;
+    border: none;
+    /*white-space: normal;
+    padding: 0.6em 0 0.6em 0.6em;*/
+}
+    #topmenu .pure-menu-open {
+    background: transparent;
+    border: 0;
+}
+    #topmenu .pure-menu ul {
+    border: none;
+    background: transparent;
+}
+    #topmenu .pure-menu ul,
+#topmenu .pure-menu .menu-item-divided {
+    border-top: 0px solid #333;
+}
+    #topmenu .pure-menu-selected {
+    background: #1f8dd6;
+}
+    #menu .pure-menu li a:hover,
+#menu .pure-menu li a:focus {
+    background: #333;
+}
+    #logo {
+    width: 48px;
+    height: 48px;
+}
+    .wraplogo {
+    margin: auto;
+    width: 70px;
+}
+    .menuicon {
+    height: 24px;
+    width: 24px;
+    margin-bottom: -0.3em;
+}
+    #imgcamcapt {
+    /*position:absolute;*/
+    margin-left: 20%;
+    width: 480px;
+    height: 360px;
+    -webkit-box-shadow: 3px 3px 3px rgba(0,48,48,0.25);
+    -moz-box-shadow: 3px 3px 3px rgba(0,48,48,0.25);
+}
+    .StackBack1 {
+    position: absolute;
+    -webkit-box-shadow: 3px 3px 3px rgba(0,48,48,0.25);
+    -moz-box-shadow: 3px 3px 3px rgba(0,48,48,0.25);
+}
+    .StackBack2 {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+    -webkit-box-shadow: 3px 3px 3px rgba(0,48,48,0.25);
+    -moz-box-shadow: 3px 3px 3px rgba(0,48,48,0.25);
+}
+    .StackBack3 {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 20px;
+    -webkit-box-shadow: 3px 3px 3px rgba(0,48,48,0.25);
+    -moz-box-shadow: 3px 3px 3px rgba(0,48,48,0.25);
+}
+    .StackBack4 {
+    margin-left: 250px;
+    margin-top: 30px;
+    -webkit-box-shadow: 3px 3px 3px rgba(0,48,48,0.25);
+    -moz-box-shadow: 3px 3px 3px rgba(0,48,48,0.25);
+}
+
+#InOutTable  {
+    width:640px;
+}
+
+.thumbCounter {
+    /*position:absolute;*/
+    width: 310px;
+    height: 230px;
+    -webkit-box-shadow: 3px 3px 3px rgba(0,48,48,0.25);
+    -moz-box-shadow: 3px 3px 3px rgba(0,48,48,0.25);
+}
+
+.scrollLog {
+    height:300px;
+    width:660px;
+    overflow-x:auto;
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(192,192,192,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,0,0,0.4); 
+}

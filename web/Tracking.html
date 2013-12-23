@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Camera Dashboard</title>
+    <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+    <link href="/css/font.css" rel="stylesheet">
+    <link href="/css/pure-min.css" rel="stylesheet">
+    <link href="/css/blue.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    <style>
+  #feedback { font-size: 1.4em; }
+  #selectable .ui-selecting { background: #FECA40; }
+  #selectable .ui-selected { background: #F39814; color: white; }
+  #selectable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+  #selectable li { margin: 3px; padding: 0.4em; font-size: 1.4em; height: 18px; }
+  </style>
+</head>
+<body>
+    <div class="pure-g-r" id="layout">
+                <a href="#menu" id="menuLink" class="pure-menu-link">
+          <span></span>
+      </a>
+      <div class="pure-u" id="topmenu">
+            <div class="pure-menu pure-menu-horizontal pure-menu-open pure-topmenu">
+                 <ul>
+                    <li><a href="Index.html">Introduccion</a></li>
+                    <li><a href="PeopleCounter.html">People Counter</a></li>
+                    <li><a href="Statistics.html">Estadisticas</a></li>
+                    <li class="pure-menu-selected"><a href="Tracking.html">Seguimiento</a></li>
+                </ul>
+            </div>
+        </div>
+    <div class="pure-u" id="menu">
+        <div class="pure-menu pure-menu-open">
+            <div id="menuheader">
+                <div class="wraplogo">
+                    <a class="pure-menu-heading" href="/Intro.html"><img id="logo" src="img/Camara.png"></img></a>
+                </div>
+            </div>
+            <ul>
+                <li class=" ">
+                    <a href="#home">Inicio</a>
+                </li>
+                <li class=" ">
+                    <a href="#description">Descripcion</a>
+                </li>
+            </ul>
+        </div> 
+    </div>
+    <div class="pure-u-1" id="main">
+        <div class="header">
+            <h1>Object Tracking</h1>
+            <h2>Deteccion de objetos en video.</h2>
+        </div>
+        <div class="content">
+            <h2 id="home" class="content-subhead">Seguimiento.</h2>
+            <div class="pure-g">
+                <div class="l-box-numbers">
+                    <div class="pure-u-1">
+                        <canvas id="camcapt" class="live" width="640" height="480" ></canvas>
+                        <img id="imgcamcapt" src="/data/labeltest.jpg" width="640" height="480" style="visibility:hidden;width:0;height:0;">
+                        <img id="thumbid" src="" style="visibility:hidden">
+                    </div>
+                </div>
+            </div>
+            <h2 id="description" class="content-subhead">Descripcion</h2>
+            <p>
+                En la capa de tracking  de objetos se puede realizar un seguimientos de las actividades de cada objeto.
+            </p>
+            <h2>Objetos</h2>
+            <p id="feedback">
+                <span>You've selected:</span> <span id="select-result">none</span>.
+            </p>
+            <div class="scrollLog">
+                <ol id="selectable">
+                </ol>            
+            </div>
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+    <!--
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>    
+-->
+<script src="js/Tracking.js"></script>
+</body>
+</html>

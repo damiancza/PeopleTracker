@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Camera Dashboard</title>
+    <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+    <link href="/css/font.css" rel="stylesheet">
+    <link href="/css/pure-min.css" rel="stylesheet">
+    <link href="/css/blue.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+</head>
+<body>
+    <div class="pure-g-r" id="layout">
+                <a href="#menu" id="menuLink" class="pure-menu-link">
+          <span></span>
+      </a>
+      <div class="pure-u" id="topmenu">
+            <div class="pure-menu pure-menu-horizontal pure-menu-open pure-topmenu">
+                 <ul>
+                    <li><a href="Index.html">Introduccion</a></li>
+                    <li class="pure-menu-selected"><a href="PeopleCounter.html">People Counter</a></li>
+                    <li><a href="Statistics.html">Estadisticas</a></li>
+                    <li><a href="Tracking.html">Seguimiento</a></li>
+                </ul>
+            </div>
+        </div>
+    <div class="pure-u" id="menu">
+        <div class="pure-menu pure-menu-open">
+            <div id="menuheader">
+                <div class="wraplogo">
+                    <a class="pure-menu-heading" href="/Intro.html"><img id="logo" src="img/Camara.png"></img></a>
+                </div>
+            </div>
+            <ul>
+                <li class=" ">
+                    <a href="#home">Inicio</a>
+                </li>
+                <li class=" ">
+                    <a href="#description">Descripcion</a>
+                </li>
+            </ul>
+        </div> 
+    </div>
+    <div class="pure-u-1" id="main">
+        <div class="header">
+            <h1>Object Tracking</h1>
+            <h2>Deteccion de objetos en video.</h2>
+        </div>
+        <div class="content">
+            <h2 id="home" class="content-subhead">Contador de personas.</h2>
+            <div class="pure-g">
+                <div class="pure-u-1">
+                    <canvas id="camcapt" class="live" width="640" height="480" ></canvas>
+                    <img id="imgcamcapt" src="/data/labeltest.jpg" width="640" height="480" style="visibility:hidden;width:0;height:0;">
+                </div>
+                <div class="l-box-numbers">
+                    <div class="pure-u-1-2">
+                        <div class="cardnumber numberleft"><p class="numtitle">Entrada</p><p id="numberin" class="Number">0</p> </div>
+                    </div>
+                    <div class="pure-u-1-2">
+                        <div class="cardnumber number-right"><p class="numtitle">Salida</p><p id="numberout" class="Number">0</p></div>
+                    </div>
+                </div>
+            </div>
+            <h2 id="description" class="content-subhead">Descripcion</h2>
+            <p>
+                Aqui se puede ver la captura en vivo del contador de personas.
+            </p>
+            <div class="scrollLog">
+                <table class="pure-table" id="InOutTable">
+                    <tr>
+                        <td>Entrada</td>    
+                        <td>Salida</td>    
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/PeopleCounter.js"></script>
+</body>
+</html>
